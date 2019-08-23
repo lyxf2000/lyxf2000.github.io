@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Next主题下未设置功能]]></title>
+    <url>%2F2019%2F08%2F23%2F%E5%8D%9A%E5%AE%A2%E6%9C%AA%E8%AE%BE%E7%BD%AE%E5%8A%9F%E8%83%BD%2F</url>
+    <content type="text"><![CDATA[目前来说建立这个博客的主要目的，是为了建立一个属于自己的小空间，一个自我总结的地方，很多社交性功能暂时是不需要的。如下： RSS功能（暂无需求） 评论功能（暂无需求） 打赏功能（暂无需求） 侧边社交栏 待添加 友情链接（暂无需求） 订阅微信公众号（暂无需求） 设置顶部加载圆圈（没必要） fork me on github效果（没必要） 为首页文章添加阴影边框效果（找不到next\source\css_custom\custom.styl）]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[关于我的电脑的一些冷知识（持续更新...）]]></title>
+    <url>%2F2019%2F08%2F21%2F%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91%E7%9A%84%E4%B8%80%E4%BA%9B%E5%86%B7%E7%9F%A5%E8%AF%86%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0-%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[戴尔笔记本esc+fn是fn锁定开关 右键桌面，查看选项中可以选择是否显示桌面图标 hexo 文章删除 ： 删除本地文章 hexo g hexo d]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>日常小知识记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Listary的使用]]></title>
+    <url>%2F2019%2F08%2F21%2FListary%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[一、下载安装 不废话了，搜索下载安装即可 二、选项设置和使用 1.更换皮肤选项里选择外观，然后选择适合的皮肤点击应用或者确定即可。 2.呼出快捷键可以通过双击ctrl实现全局的界面打开，非常方便。 3.web功能 常用搜索引擎 gg：使用Google查询关键字，如gg+SpaceJava，就会在Google中查找Java bd：使用Baidu查询关键字 youtube：使用youtube查询的关键字 其他不常用： wiki：在wiki中查找关键字，如wiki Java maps：使用Google Map查找地点关键字，如maps 上海 amazon：在Amazon中查找货物，如amazon Mac 等等……………….. 关键字+空格+搜索内容，若不加内容则直接打开网址 手动添加web关键字 zh | 知乎 | http://www.zhihu.com/search?q={query}bi | B站 | http://www.bilibili.com/search?keyword={query} wyy | 网易云音乐 | http://music.163.com/#/search/m/?s={query}&amp;type=1 db | 豆瓣 | https://www.douban.com/search?q={query}dbdy | 豆瓣电影 | http://movie.douban.com/subject_search?search_text={query} hy | 虎牙 | https://www.huya.com/search?hsk={query} dy | 斗鱼 | https://www.douyu.com/search/?kw={query} tb | 淘宝 | https://s.taobao.com/search?q={query} tm | 天猫 | https://www.tmall.com/search?q={query} jd | 京东 | https://search.jd.com/Search?keyword={query} mooc | 慕课 | https://www.icourse163.org/search.htm?search={query}#/ wd |王道论坛 | http://www.cskaoyan.com/ opgg | opgg | https://www.op.gg/champion/statistics kjs | 看剧社 | http://www.kanjushe.com/ ggfy| 谷歌翻译 | https://translate.google.cn/#view=home&amp;op=translate&amp;sl=auto&amp;tl=zh-CN&amp;text={query} lyxf | 乐屿心扉 | www.lyxf.live 图片决定不顺眼可以手动添加。 4.过滤器（搜索）使用方法：命令+冒号+关键字 doc：搜索文档 pic：搜索图片 audio：搜索音频文件 video：搜索视频文件]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>提高效率的小工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[使用PicGo与腾讯云搭建图床]]></title>
+    <url>%2F2019%2F08%2F21%2F%E4%BD%BF%E7%94%A8PicGo%E4%B8%8E%E8%85%BE%E8%AE%AF%E4%BA%91%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A%2F</url>
+    <content type="text"><![CDATA[一、前言 本来想使用七牛云+Mpic来搭建图床，毕竟每个月都有10G免费额度，够用的了，但是七牛云改革了，一个月后需要备案自己的域名才能继续免费使用，有些麻烦。 搜寻了网上的信息后最终决定使用腾讯云COS和PicGo搭建图床。一是不用备案，还有6个月免费额度， 其次毕竟鹅厂，比较可靠。 二、使用腾讯云COS Ⅰ.注册腾讯云COS链接 Ⅱ.使用对象储存在产品中选择对象储存。 Ⅲ.创建储存桶​ 创建储存桶-》访问权限勾选公有读，私有写。 ​ 储存区域填写临近本地的。 Ⅳ.防盗链存储桶列表-&gt;基础配置-&gt;防盗链设置-&gt;referer:自己的域名 防盗链可以使得除了你的指定域名之外不可读取你的文件，但是由于本人博客暂时没有大量的访问，也没有开放推广的想法，而且为了使得PicGo能够预览图片方便，所以个人就不加防盗链了 Ⅴ.可以使用COS客户端来获取连接。由于本人感觉使用PicGo更加方便，在此就不再示范了，需要的自行下载使用。 三、使用PicGo Ⅰ.下载PicGo项目GitHub 下载地址 macOS用户请下载最新版本的dmg文件，windows用户请下载最新版本的exe文件，linux用户请下载AppImage文件。 如果你是Arch类的Linux用户，可以直接通过aurman -S picgo-appimage来安装PicGo。感谢 @houbaron 的贡献！ 如果你是macOS用户，可以使用brew cask来安装PicGo: brew cask install picgo。感谢 @womeimingzi11 的贡献！ 如果你是Windows用户，还可以使用 Scoop 来安装PicGo: scoop bucket add helbing https://github.com/helbing/scoop- Ⅱ.设置PicGo1.查明COS版本COS V4.0 COS V5.0 不带V4就是5，不再赘述 选择相应版本 2.查询并且设置APPID、SecretId和SecretKey访问：https://console.cloud.tencent.com/cam/capi 查询后填写。 3.查询并且设置bucket名以及存储区域代号访问：https://console.cloud.tencent.com/cos5/bucket 查询后填写。 之后设定为默认图床重启就可以使用了。 四、备注 默认快捷键为ctrl+shift+p可以自行设置里更改。 更多功能或者帮助可查询配置手册：https://picgo.github.io/PicGoDoc/zh/guide/config.html#%E8%85%BE%E8%AE%AF%E4%BA%91cos]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo-Next主题美化]]></title>
+    <url>%2F2019%2F08%2F21%2Fhexo-NexT%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96(2)%2F</url>
+    <content type="text"><![CDATA[文章底部添加版权信息]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客搭建</tag>
+        <tag>hexo美化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo-Next主题美化]]></title>
+    <url>%2F2019%2F08%2F20%2Fhexo-Next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96(1)%2F</url>
+    <content type="text"><![CDATA[配置博客基本信息 在站点根目录下_config.yml中进行基础配置 我使用Notepad++打开编辑，也可以直接使用记事本 说明: hexo 下的config.yml 称为站点配置文件 _themes/主题名 中的_config.yml 称为主题配置文件 常用language Language Example Code 🇨🇳 Chinese (Simplified) 简体中文 zh-CN 🇹🇼 Chinese (Traditional) 繁體中文 zh-TW 🇭🇰 Chinese (Hong Kong) 繁體中文-香港 zh-HK 🇺🇸 English English en 🇯🇵 Japanese 日本語 ja 🇰🇷 Korean 한국어 ko 常用语言需要在主题下的language目录里检查是否含有该语言配置文件 例如在NexT主题下，中文不能使用zh-Hans ①可以写zh-CN ②可以将主题文件下的zh-CN改名为zh-Hans 超链接颜色修改 要修改的body超链接的样式在themes\next\source\css\_common\components\post\post.styl里,在这里添加条目: 1234.post-body a &#123; color: #428BCA;//字体为蓝色 font-weight: bold;//字体为粗体，不想使用可以删除&#125; 也可以添加如下文本链接为蓝色，鼠标放上去为橙色 12345678910.post-body p a &#123; color: #0593d3; border-bottom: none; border-bottom: 1px solid #0593d3; &amp;:hover &#123; color: #fc6423; border-bottom: none; border-bottom: 1px solid #fc6423; &#125;&#125; 新连接图示 菜单设置 在主题配置文件下找到以下代码： 123456789menu: home: / || home //首页 #about: /about/ || user //关于 #tags: /tags/ || tags //标签 #categories: /categories/ || th //分类 archives: /archives/ || archive //归档 #schedule: /schedule/ || calendar //日程表 #sitemap: /sitemap.xml || sitemap //站点地图 #commonweal: /404/ || heartbeat //公益404 需要哪个就把取消注释关掉（就是删除前面的#） NexT分主题设置 同样在主题配置文件中，找到Scheme Settings 12345# Schemesscheme: 选择你喜欢的主题，我选择Pisces#scheme: Mist#scheme: Pisces#scheme: Gemini 侧栏设置 侧栏设置包括：侧栏位置、侧栏显示与否、文章间距、返回顶部按钮等等 打开 主题配置文件 找到sidebar字段 12345678910111213141516sidebar:# Sidebar Position - 侧栏位置（只对Pisces | Gemini两种风格有效） position: left //靠左放置 #position: right //靠右放置# Sidebar Display - 侧栏显示时机（只对Muse | Mist两种风格有效） #display: post //默认行为，在文章页面（拥有目录列表）时显示 display: always //在所有页面中都显示 #display: hide //在所有页面中都隐藏（可以手动展开） #display: remove //完全移除 offset: 12 //文章间距（只对Pisces | Gemini两种风格有效） b2t: false //返回顶部按钮（只对Pisces | Gemini两种风格有效） scrollpercent: true //返回顶部按钮的百分比 头像设置 打开 主题配置文件 找到Sidebar Avatar字段 1234567url: /images/avatar.gif# If true, the avatar would be dispalyed in circle.rounded: true# The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.opacity: 1# If true, the avatar would be rotated with the cursor.rotated: true 这是头像的路径，只需把你的头像命名为header.jpg（随便命名）放入themes/next/source/images中，将avatar的路径名改成你的头像名就OK啦！ 在Next7.X版本下可以： rounded:决定是否使用圆形图像（true/false） rotated：决定是否使用头像选择（true/false） opacity：头像透明度（0~1） 如果是椭圆的是因为原图片不是方形的，找一个宽高像素一样的图片即可，之前版本不知道支持不支持 添加阅读全文按钮 是文章不再全部展示，添加阅读文章选项，选择阅读。 1在你的文章中添加&lt;!--more--&gt;,你想再哪儿截止就在哪儿添加 添加分类模块 1、新建一个分类页面 1$ hexo new page categories 2、你会发现你的source文件夹下有了categorcies/index.md，打开index.md文件进行编辑 1234title: 分类 date: 你的时间,会自动创建. type: &quot;categories&quot; comments: false 3、打开 主题配置文件 找到menu，将categorcies取消注释 4、把文章归入分类只需在文章的顶部标题下方添加categories字段，即可自动创建分类名并加入对应的分类中例： 12title: 分类测试文章标题categories: 分类名 添加标签模块 1、新建一个标签页面 1$ hexo new page tags 2、你会发现你的source文件夹下有了tags/index.md，打开index.md文件进行编辑 1234title: 标签date: 你的时间,会自动创建.type: &quot;tags&quot;comments: false 3、打开 主题配置文件 找到menu，将tags取消注释 4、把文章添加标签只需在文章的顶部标题下方添加tags字段，即可自动创建标签名并归入对应的标签中举个栗子： 12345title: 标签测试文章标题tags: - 标签1 - 标签2 ... 添加多个标签注意不要在第一行写 添加关于模块 1、新建一个关于页面 1$ hexo new page about 2、你会发现你的source文件夹下有了about/index.md，打开index.md文件即可编辑关于你的信息，可以随便编辑。 3、打开 主题配置文件 找到menu，将about取消注释 4、进行内容编辑 添加搜索功能 1、安装 hexo-generator-searchdb 插件 1$ npm install hexo-generator-searchdb --save 2、打开 站点配置文件 找到Extensions在下面添加 123456# 搜索search: path: search.xml field: post format: html limit: 10000 3、打开 主题配置文件 找到Local search，将enable设置为true 个人社交连接 修改theme/_config.yaml文件下的social属性，按照格式设置即可： 例： 12social: GitHub: https://github.com/yourname || github Bilibili: https://space.bilibili.com/yournum || bilibili 图标取自https://fontawesome.com/icons?from=io 新建文章模板更改 在根目录下scaffolds文件夹打开post.md 12345title: &#123;&#123; title &#125;&#125;//题目date: &#123;&#123; date &#125;&#125;//日期tags: //标签 categories: //分类copyright: true //版权信息说明 修改文章底部标签的符合“#” 修改模板/themes/next/layout/_macro/post.swig，搜索 rel=&quot;tag&quot;&gt;#，将 # 换成&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt; 设置网站LOGO 去别的网站下载或者制作ioc图标32*32，并将图标名称改为favicon.ico，然后把图标放在/themes/next/source/images里，并且修改主题配置文件： 找到字段favicon: 12345favicon: small: /images/favicon-16x16-next.png medium: /images/favicon-32x32-next.png apple_touch_icon: /images/apple-touch-icon-next.png safari_pinned_tab: /images/logo.svg 可以看到有四种效果,一般我们只需将medium换成我们自己图标路径就行了。 修改博客底部显示 1.隐藏网页底部powered By Hexo 打开themes/next/layout/_partials/footer.swig,直接隐藏以下代码即可,建议不要删除，即添加&lt;!--和--&gt;代码如下: 123456789101112131415161718&lt;!--&#123;% if theme.footer.powered.enable %&#125; &lt;div class=&quot;powered-by&quot;&gt;&#123;# #&#125;&#123;&#123; __(&apos;footer.powered&apos;, &apos;&lt;a class=&quot;theme-link&quot; target=&quot;_blank&quot;&apos; + nofollow + &apos; href=&quot;https://hexo.io&quot;&gt;Hexo&lt;/a&gt;&apos;) &#125;&#125;&#123;% if theme.footer.powered.version %&#125; v&#123;&#123; hexo_env(&apos;version&apos;) &#125;&#125;&#123;% endif %&#125;&#123;##&#125;&lt;/div&gt;&#123;% endif %&#125;&#123;% if theme.footer.powered.enable and theme.footer.theme.enable %&#125; &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;&#123;% endif %&#125;&#123;% if theme.footer.theme.enable %&#125; &lt;div class=&quot;theme-info&quot;&gt;&#123;# #&#125;&#123;&#123; __(&apos;footer.theme&apos;) &#125;&#125; &amp;mdash; &#123;# #&#125;&lt;a class=&quot;theme-link&quot; target=&quot;_blank&quot;&#123;&#123; nofollow &#125;&#125; href=&quot;https://github.com/theme-next/hexo-theme-next&quot;&gt;&#123;# #&#125;NexT.&#123;&#123; theme.scheme &#125;&#125;&#123;# #&#125;&lt;/a&gt;&#123;% if theme.footer.theme.version %&#125; v&#123;&#123; version &#125;&#125;&#123;% endif %&#125;&#123;##&#125;&lt;/div&gt;&#123;% endif %&#125;--&gt; 2.修改网页底部 文字统计和参考文：https://www.jianshu.com/p/3a05351a37dc ​ https://godweiyang.com/2018/04/13/hexo-blog/ ​ https://www.simon96.online/2018/10/12/hexo-tutorial/ ​ http://theme-next.iissnan.com/theme-settings.html ​ http://www.dragonbaby308.com/hexo-theme-next/#%E5%A4%B4%E5%83%8F ​ https://www.jianshu.com/p/043a4ae7684d ​ https://theme-next.org/docs/theme-settings/#Custom-Page-Support ​]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客搭建</tag>
+        <tag>hexo美化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MarkDown文本写作的的进阶（进阶学习）]]></title>
+    <url>%2F2019%2F08%2F09%2FMarkDown%E7%9A%84%E8%BF%9B%E9%98%B6%2F</url>
+    <content type="text"><![CDATA[一、颜色、字体和大小相关设置 Ⅰ.文字的颜色、大小、字体设置： &lt;font color=填写颜色 size=填写大小 face=填写字体名字&gt;书写内容&lt;/font&gt; 内容可以调换顺序 SIZE的大小浏览器默认为3，我们可以1-7选择 不需修改的东西可以不写 例：&lt;font color=填写颜色&gt;书写内容&lt;/font&gt;只更改颜色 字体一般用不到，但是可以改成 宋体 仿宋 黑体 楷体 微软正黑体 等等，百度HTML字体查询即可。 Ⅱ.文字背景的颜色设置 &lt;table&gt;&lt;tr&gt;&lt;td bgcolor=#bfe1f1&gt;文本内容&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt; 样例： 背景色是：#bfe1f1 - 该编辑只能用在一行的开头 Ⅲ.颜色代码 颜色代码 常用颜色可以直接打英文： red gree green blue orange yellow grey Ⅳ.文字居中位置设置1&lt;center&gt;这一行居中&lt;/center&gt; 二、上标和下标书写 Ⅰ.上标 &lt;sup&gt;内容&lt;/SUP&gt; 样例：232 Ⅱ.下标 &lt;SUB&gt;内容&lt;/SUB&gt; 样例：X2 三、导出文件 Ⅰ.导出通过typora的文件选项中的导出，我们可以导出下列文件 图像 html PDF word文件需要下载使用 pandoc,我们可以不直接使用pandoc，安装后就可以直接使用typora进行转换了，安装后不行的话就重启机器即可 四、插入图片的排版 Ⅰ.插入原图片![](图片地址) 一般直接使用图床复制黏贴即可 Ⅱ.修改图片大小 &lt;img width=&#39;宽度&#39; height=&#39;长度&#39; src=&quot;图片网址&quot;&gt; 根据比例： &lt;img src=&quot;图片地址&quot; width=&quot;60%&quot;&gt; Ⅲ.修改图片位置（最终渲染网页文件根据主题变化，若不能变化可具体查找主题文件&gt;） &lt;img width = &quot;宽度&quot; height =&quot;长度&quot; src =&quot;图片网址&quot; align=&quot;位置&quot;&gt; 位置包括 居中：center 居左：left 居右：right Ⅳ.图片并排放置（最终渲染网页文件根据主题变化，若不能变化可具体查找主题文件&gt;）123&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;图片地址&quot; width=&quot;30%&quot; &gt;&lt;img src=&quot;图片地址&quot; width=&quot;30%&quot; &gt;&lt;img src=&quot;图片地址&quot; width=&quot;30%&quot; &gt;&lt;/div&gt;]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客搭建</tag>
+        <tag>Typora</tag>
+        <tag>MarkDown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何使用typora进行Markdown文本写作（基础操作）]]></title>
+    <url>%2F2019%2F08%2F08%2F%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8typora%E8%BF%9B%E8%A1%8CMarkdown%E6%96%87%E6%9C%AC%E5%86%99%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[一、基本快捷键MarkDown书写 撤销：ctrl+z 选中当前词语，多次按可以向前选择不同词语：ctrl+d 选中当前行：ctrl+l 开启/关闭源码模式：ctrl+z 对内容加粗：ctrl+B 下划线添加:ctrl+u 进行倾斜体变换:ctrl+I 对应MarkDown语言为两个‘*’。 倾斜+加粗: 六个星号’*’ 搜索状态下按f3查找下一个。 替换操作:ctrl+h ==+内容+==可以使内容高亮。（该功能可能不支持博客显示，可用HTML支持进行操作） 建立行内代码块:ctrl+shift+Tab键上面的飘号 也可以使用两次Tab键上面的飘号来建立，但是需要转换shift使得飘号键可以打出来。 建立代码块：ctrl+shift+k 也可以使用三个Tab键上面的飘号来建立，三个飘号后面加语言可以直接写，不用再选择语言了。 添加无序列表：++Space or - + Space or *+ Space 无序列表状态+Tab可以调转为次级列表。 无序列表状态+回车X2可以调转上一级无序列表。 *添加有序列表: * 数字+小数点+Space自动生成，回车可继续按照顺序生成 添加任务列表： -+ [Space]+Space生成任务列表,回车可继续生成 text1 测试2 段落书写：ctrl+0 ctrl+1~6为1到6级标题。 分割线：三个或者更多‘-’ 删除线：四个波浪符号（shitf+波浪键），删除线测试。 超链接操作：ctrl+k 进行前面方括号写名字，后面小括号写地址。例如：百度 PS：需要加上http总之就是浏览器该网址地址的全部部分 插入表格：ctrl+t 第一行标题为加粗 在左侧边框可以进行拖动 在上侧边框可以进行列拖动 ctrl+方向键直接在表格内移动不需要看光标位置 表格内右键具有插入等更多功能 支持网页端表格复制转换（直接复制后在空白处粘贴即可） 引用使用:MarkDown语言比快捷键快捷，为&gt;+Space,PS: 只能用在行的开头 快捷键为shift+ctrl+q. 引用中的每行开头可以继续使用引用 测试1 测试2 测试3 几次引用就用几次回车退出 注释：[^数字]之后在文末打上[^数字]：后面是描述。。。 测试：AABBCCDD按不出^1的. 上标：^内容^该功能可能不支持博客显示，可写好后用图片法插入 测^试^ 下标：~内容~该功能可能不支持博客显示，可写好后用图片法插入 测试 内联公式：$公式$，$是美元符号,可以使用MathJax呈现LaTeX数学表达式，该功能可能不支持博客显示，可写好后用图片法插入 $e^2$ emoji::任意字母之后进行选择 PS:冒号是英文冒号，该功能可能不支持博客显示，可写好后用图片法插入 :umbrella: *进行图片插入操作: *shift+ctrl+i 也可以直接拖动图片进入。 复制网络图片的地址直接粘贴 利用微博图床,复制该图网址，进行上传 目录生成：[toc]（该功能不支持某些主题，但是某些博客主题自带完成的目录功能，例如：NexT） [TOC] 二、MarkDown的拓展书写 HTML的支持，进行自定义图片大小和缩放。 LaTex公式支持 流程图支持（Mermaid，Flowchart，Sequence） 比较实用的Mermaid,该功能不支持博客，可以输出图片进行插入。 12345graph TD;开始--&gt;条件A;开始--&gt;条件B;条件A--&gt;结束;条件B--&gt;结束;]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客搭建</tag>
+        <tag>Typora</tag>
+        <tag>MarkDown</tag>
+      </tags>
+  </entry>
+</search>
