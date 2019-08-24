@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="乐屿心扉">
 <meta property="og:description" content="目前来说建立这个博客的主要目的，是为了建立一个属于自己的小空间，一个自我总结的地方，很多社交性功能暂时是不需要的。如下：   RSS功能（暂无需求）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-24T12:33:15.090Z">
+<meta property="og:updated_time" content="2019-08-24T13:37:54.740Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Next主题下未设置功能">
 <meta name="twitter:description" content="目前来说建立这个博客的主要目的，是为了建立一个属于自己的小空间，一个自我总结的地方，很多社交性功能暂时是不需要的。如下：   RSS功能（暂无需求）">
@@ -436,7 +436,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-24 20:33:15" itemprop="dateModified" datetime="2019-08-24T20:33:15+08:00">2019-08-24</time>
+                <time title="修改时间：2019-08-24 21:37:54" itemprop="dateModified" datetime="2019-08-24T21:37:54+08:00">2019-08-24</time>
               </span>
             
           
@@ -457,6 +457,32 @@
               
             </span>
           
+
+
+
+
+
+<span class="post-time">
+  &nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+  <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">字数统计:</span>
+<span class="post-count">186(字)</span>
+</span>
+
+<span class="post-time">
+  &nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+<i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">阅读时长≈</span>
+<span class="post-count">1(分)</span>
+</span>
+
+
+
+
 
           
             
@@ -507,7 +533,6 @@
 <li><input disabled type="checkbox"> <strong>文末结束标语</strong>（暂无需求）</li>
 <li><input checked disabled type="checkbox"> <strong>博文置顶</strong>（待添加）</li>
 <li><input checked disabled type="checkbox"> <strong>主页文章图片展示</strong></li>
-<li><input checked disabled type="checkbox"> <strong>文章字数统计和阅读估计时间</strong>（暂无反应？？？）</li>
 </ul>
 
       
@@ -820,7 +845,7 @@
       <div class="footer-inner">
         
 
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="heart">
@@ -847,53 +872,54 @@
 
 
 
-<!--添加网站的运行时间-->
-<span id="sitetime"> <br></span>
-<script language="javascript">
-	function siteTime(){
-		window.setTimeout("siteTime()", 1000);
-		var seconds = 1000
-		var minutes = seconds * 60
-		var hours = minutes * 60
-		var days = hours * 24
-		var years = days * 365
 
-		var today = new Date()
-		var todayYear = today.getFullYear()
-		var todayMonth = today.getMonth()
-		var todayDate = today.getDate()
-		var todayHour = today.getHours()
-		var todayMinute = today.getMinutes()
-		var todaySecond = today.getSeconds()
-		var t1 = Date.UTC(2017,4,18,11,00,00)
-		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)
-		var diff = t2-t1
-
-		var diffYears = Math.floor(diff/years)
-		var diffDays = Math.floor((diff/days)-diffYears*365)
-		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours)
-		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes)
-		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds)
-		document.getElementById("sitetime").innerHTML=" 本站已运行"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒<br>"
-	}
-	siteTime()
+<span>本站已运行<span id="showDays"></span></span>
+<script>
+  var seconds = 1000;
+  var minutes = seconds * 60;
+  var hours = minutes * 60;
+  var days = hours * 24;
+  var years = days * 365;
+  var birthDay = Date.UTC(2019,08,01,14,00,00); // 这里设置建站时间
+  setInterval(function() {
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = now - birthDay;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById('showDays').innerHTML=""+diffYears+"年"+diffDays+"天"+diffHours+"小时"+diffMinutes+"分钟"+diffSeconds+"秒";
+  }, 1000);
+  
+  
 </script>
-
-
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-  本站访客数:<span id="busuanzi_value_site_uv"></span>
-</span>
+<!-- 不蒜字统计 -->
+<div>
+	<i class="fa fa-user-md"></i>
+	<span id="busuanzi_container_site_uv">
+	  访问人数：<span id="busuanzi_value_site_uv"></span>
+	</span>&nbsp;|&nbsp;
+	
+	<i class="fa fa-eye"></i>
+	<span id="busuanzi_container_site_pv">
+	  总访问量：<span id="busuanzi_value_site_pv"></span>
+	</span>&nbsp;|&nbsp;
+	
+	<!-- 添加博客全站总字数统计-->
+	<i class="fa fa-pencil"></i>
+	<span class="post-count">博客全站共 6.1k 字</span>
 </div>
+	
 
-<span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-</span>
 
-<div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">博客全站共5.7k字</span>
-</div>
 
         
 
