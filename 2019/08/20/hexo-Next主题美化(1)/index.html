@@ -106,7 +106,7 @@
 
 
   <meta name="description" content="配置博客基本信息 在站点根目录下_config.yml中进行基础配置">
-<meta name="keywords" content="hexo美化,博客搭建">
+<meta name="keywords" content="博客搭建,hexo美化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo-Next主题美化&lt;一&gt;">
 <meta property="og:url" content="http://yoursite.com/2019/08/20/hexo-Next主题美化(1)/index.html">
@@ -116,7 +116,7 @@
 <meta property="og:image" content="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190821145555.png">
 <meta property="og:image" content="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190821205005.png">
 <meta property="og:image" content="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190821205016.png">
-<meta property="og:updated_time" content="2019-08-24T03:13:52.017Z">
+<meta property="og:updated_time" content="2019-08-24T12:37:48.783Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo-Next主题美化&lt;一&gt;">
 <meta name="twitter:description" content="配置博客基本信息 在站点根目录下_config.yml中进行基础配置">
@@ -440,7 +440,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-24 11:13:52" itemprop="dateModified" datetime="2019-08-24T11:13:52+08:00">2019-08-24</time>
+                <time title="修改时间：2019-08-24 20:37:48" itemprop="dateModified" datetime="2019-08-24T20:37:48+08:00">2019-08-24</time>
               </span>
             
           
@@ -470,14 +470,6 @@
           
           
 
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-                 阅读次数： 
-                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
-              </span>
-            </span>
           
 
           <br>
@@ -654,32 +646,20 @@
 
 <p>可以看到有四种效果,一般我们只需将medium换成我们自己图标路径就行了。</p>
 <h3 id="修改博客底部显示"><a href="#修改博客底部显示" class="headerlink" title="修改博客底部显示"></a>修改博客底部显示</h3><hr>
-<ol>
-<li>隐藏网页底部powered By Hexo</li>
-</ol>
-<p>打开<code>themes/next/layout/_partials/footer.swig</code>,直接隐藏以下代码即可,建议不要删除，<strong>即添加<code>&lt;!--</code>和<code>--&gt;</code></strong><br>代码如下:</p>
+<h4 id="隐藏网页底部powered-By-Hexo"><a href="#隐藏网页底部powered-By-Hexo" class="headerlink" title="隐藏网页底部powered By Hexo"></a>隐藏网页底部powered By Hexo</h4><p>打开<code>themes/next/layout/_partials/footer.swig</code>,直接隐藏以下代码即可,建议不要删除，<strong>即添加<code>&lt;!--</code>和<code>--&gt;</code></strong><br>代码如下:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--&#123;% if theme.footer.powered.enable %&#125;</span><br><span class="line">  &lt;div class=&quot;powered-by&quot;&gt;&#123;#</span><br><span class="line">  #&#125;&#123;&#123; __(&apos;footer.powered&apos;, &apos;&lt;a class=&quot;theme-link&quot; target=&quot;_blank&quot;&apos; + nofollow + &apos; href=&quot;https://hexo.io&quot;&gt;Hexo&lt;/a&gt;&apos;) &#125;&#125;&#123;% if theme.footer.powered.version %&#125; v&#123;&#123; hexo_env(&apos;version&apos;) &#125;&#125;&#123;% endif %&#125;&#123;#</span><br><span class="line">#&#125;&lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% if theme.footer.powered.enable and theme.footer.theme.enable %&#125;</span><br><span class="line">  &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% if theme.footer.theme.enable %&#125;</span><br><span class="line"> &lt;div class=&quot;theme-info&quot;&gt;&#123;#</span><br><span class="line">  #&#125;&#123;&#123; __(&apos;footer.theme&apos;) &#125;&#125; &amp;mdash; &#123;#</span><br><span class="line">  #&#125;&lt;a class=&quot;theme-link&quot; target=&quot;_blank&quot;&#123;&#123; nofollow &#125;&#125; href=&quot;https://github.com/theme-next/hexo-theme-next&quot;&gt;&#123;#</span><br><span class="line">    #&#125;NexT.&#123;&#123; theme.scheme &#125;&#125;&#123;#</span><br><span class="line">  #&#125;&lt;/a&gt;&#123;% if theme.footer.theme.version %&#125; v&#123;&#123; version &#125;&#125;&#123;% endif %&#125;&#123;#</span><br><span class="line">#&#125;&lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;--&gt;</span><br></pre></td></tr></table></figure>
 
-<ol start="2">
-<li>修改网页底部桃心</li>
-</ol>
-<p>还是打开<code>themes/next/layout/_partials/footer.swig</code>，找到字段<code>with-love</code>;</p>
+<h4 id="修改网页底部桃心"><a href="#修改网页底部桃心" class="headerlink" title="修改网页底部桃心"></a>修改网页底部桃心</h4><p>还是打开<code>themes/next/layout/_partials/footer.swig</code>，找到字段<code>with-love</code>;</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;span class=&quot;with-love&quot; id=&quot;animate&quot;&gt;</span><br><span class="line">    &lt;i class=&quot;fa fa-&#123;&#123; theme.footer.icon.name &#125;&#125;&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;/span&gt;</span><br></pre></td></tr></table></figure>
 
 <p>然后在<a href="http://www.bootcss.com/p/font-awesome/#" target="_blank" rel="noopener">图标库</a>中找到你想要的图标,修改如下:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;span class=&quot;with-love&quot; id=&quot;animate&quot;&gt;</span><br><span class="line">    &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;/span&gt;</span><br></pre></td></tr></table></figure>
 
 <p>其中heart为图标名字,只要icon-后面的就行了;</p>
-<ol start="3">
-<li>实现网站底部访问量显示</li>
-</ol>
-<p>打开主题配置文件<code>_config.yml</code>,修改如下代码:</p>
+<h4 id="实现网站底部访问量显示"><a href="#实现网站底部访问量显示" class="headerlink" title="实现网站底部访问量显示"></a>实现网站底部访问量显示</h4><p>打开主题配置文件<code>_config.yml</code>,修改如下代码:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  enable: true</span><br><span class="line">  total_visitors: true</span><br><span class="line">  total_visitors_icon: user </span><br><span class="line">  total_views: true</span><br><span class="line">  total_views_icon: eye</span><br><span class="line">  post_views: true</span><br><span class="line">  post_views_icon: eye</span><br></pre></td></tr></table></figure>
 
-<ol start="4">
-<li>让心变红并且跳起来</li>
-</ol>
-<p>首先修改主题配置文件：</p>
+<h4 id="让心变红并且跳起来"><a href="#让心变红并且跳起来" class="headerlink" title="让心变红并且跳起来"></a>让心变红并且跳起来</h4><p>首先修改主题配置文件：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">文件位置：~/hexo/themes/next/_config.yml</span><br><span class="line">copyfooter:      icon: user修改成heart</span><br></pre></td></tr></table></figure>
 
 <p>然后修改<code>footer.swig</code>：</p>
@@ -692,6 +672,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 自定义页脚跳动的心样式</span><br><span class="line">@keyframes heartAnimate</span><br><span class="line">&#123;    </span><br><span class="line">0%,100%&#123;transform:scale(1);&#125; </span><br><span class="line">10%,30%&#123;transform:scale(0.9);&#125;   </span><br><span class="line">20%,40%,60%,80%&#123;transform:scale(1.1);&#125; </span><br><span class="line">50%,70%&#123;transform:scale(1.1);&#125;</span><br><span class="line">&#125;</span><br><span class="line">#heart </span><br><span class="line">&#123;   </span><br><span class="line">animation: heartAnimate 1.33s ease-in-out infinite;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.with-love </span><br><span class="line">&#123;    </span><br><span class="line">color: rgb(255, 0, 0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>其中<code>color</code>的值可以改成你自己喜欢的，RGB颜色这里:<a href="https://tool.oschina.net/commons?type=3" target="_blank" rel="noopener">https://tool.oschina.net/commons?type=3</a></p>
+<h4 id="显示网站运行时间"><a href="#显示网站运行时间" class="headerlink" title="显示网站运行时间"></a>显示网站运行时间</h4><p>在<code>themes/layout/_parrials/footer.swing</code> 中添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--添加网站的运行时间--&gt;</span><br><span class="line">&lt;span id=&quot;sitetime&quot;&gt; &lt;br&gt;&lt;/span&gt;</span><br><span class="line">&lt;script language=&quot;javascript&quot;&gt;</span><br><span class="line">	function siteTime()&#123;</span><br><span class="line">		window.setTimeout(&quot;siteTime()&quot;, 1000);</span><br><span class="line">		var seconds = 1000</span><br><span class="line">		var minutes = seconds * 60</span><br><span class="line">		var hours = minutes * 60</span><br><span class="line">		var days = hours * 24</span><br><span class="line">		var years = days * 365</span><br><span class="line"></span><br><span class="line">		var today = new Date()</span><br><span class="line">		var todayYear = today.getFullYear()</span><br><span class="line">		var todayMonth = today.getMonth()</span><br><span class="line">		var todayDate = today.getDate()</span><br><span class="line">		var todayHour = today.getHours()</span><br><span class="line">		var todayMinute = today.getMinutes()</span><br><span class="line">		var todaySecond = today.getSeconds()</span><br><span class="line">		var t1 = Date.UTC(2017,4,18,11,00,00)</span><br><span class="line">		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)</span><br><span class="line">		var diff = t2-t1</span><br><span class="line"></span><br><span class="line">		var diffYears = Math.floor(diff/years)</span><br><span class="line">		var diffDays = Math.floor((diff/days)-diffYears*365)</span><br><span class="line">		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours)</span><br><span class="line">		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes)</span><br><span class="line">		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds)</span><br><span class="line">		document.getElementById(&quot;sitetime&quot;).innerHTML=&quot; 本站已运行&quot;+diffYears+&quot; 年 &quot;+diffDays+&quot; 天 &quot;+diffHours+&quot; 小时 &quot;+diffMinutes+&quot; 分钟 &quot;+diffSeconds+&quot; 秒&lt;br&gt;&quot;</span><br><span class="line">	&#125;</span><br><span class="line">	siteTime()</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
 <h3 id="文末添加版权声明"><a href="#文末添加版权声明" class="headerlink" title="文末添加版权声明"></a>文末添加版权声明</h3><hr>
 <p>主题配置文件<code>_config.yml</code>下搜索<code>creative_commons</code>:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  license: by-nc-sa</span><br><span class="line">  sidebar: false</span><br><span class="line">  post: false</span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>
@@ -716,6 +699,8 @@
 
 <p><code>.header-inner</code>下为侧边栏透明度</p>
 <p><code>.main-inner</code>下为主页面透明度</p>
+<p>### </p>
+<hr>
 
       
     </div>
@@ -767,9 +752,9 @@
         
         <div class="post-tags">
           
-            <a href="/tags/hexo美化/" rel="tag"><i class="fa fa-tag">hexo美化</i>
-          
             <a href="/tags/博客搭建/" rel="tag"><i class="fa fa-tag">博客搭建</i>
+          
+            <a href="/tags/hexo美化/" rel="tag"><i class="fa fa-tag">hexo美化</i>
           
         </a></a></div>
       
@@ -1025,7 +1010,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置博客基本信息"><span class="nav-number">1.</span> <span class="nav-text">配置博客基本信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#超链接颜色修改"><span class="nav-number">2.</span> <span class="nav-text">超链接颜色修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#菜单设置"><span class="nav-number">3.</span> <span class="nav-text">菜单设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NexT分主题设置"><span class="nav-number">4.</span> <span class="nav-text">NexT分主题设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#侧栏设置"><span class="nav-number">5.</span> <span class="nav-text">侧栏设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#头像设置"><span class="nav-number">6.</span> <span class="nav-text">头像设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加阅读全文按钮"><span class="nav-number">7.</span> <span class="nav-text">添加阅读全文按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加分类模块"><span class="nav-number">8.</span> <span class="nav-text">添加分类模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加标签模块"><span class="nav-number">9.</span> <span class="nav-text">添加标签模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加关于模块"><span class="nav-number">10.</span> <span class="nav-text">添加关于模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加搜索功能"><span class="nav-number">11.</span> <span class="nav-text">添加搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#个人社交连接"><span class="nav-number">12.</span> <span class="nav-text">个人社交连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建文章模板更改"><span class="nav-number">13.</span> <span class="nav-text">新建文章模板更改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改文章底部标签的符合“-”"><span class="nav-number">14.</span> <span class="nav-text">修改文章底部标签的符合“#”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置网站LOGO"><span class="nav-number">15.</span> <span class="nav-text">设置网站LOGO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改博客底部显示"><span class="nav-number">16.</span> <span class="nav-text">修改博客底部显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文末添加版权声明"><span class="nav-number">17.</span> <span class="nav-text">文末添加版权声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章浏览进度显示和回到顶部功能"><span class="nav-number">18.</span> <span class="nav-text">文章浏览进度显示和回到顶部功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片放大查看功能"><span class="nav-number">19.</span> <span class="nav-text">图片放大查看功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给页面添加背景图片"><span class="nav-number">20.</span> <span class="nav-text">给页面添加背景图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面透明度修改"><span class="nav-number">21.</span> <span class="nav-text">页面透明度修改</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置博客基本信息"><span class="nav-number">1.</span> <span class="nav-text">配置博客基本信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#超链接颜色修改"><span class="nav-number">2.</span> <span class="nav-text">超链接颜色修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#菜单设置"><span class="nav-number">3.</span> <span class="nav-text">菜单设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NexT分主题设置"><span class="nav-number">4.</span> <span class="nav-text">NexT分主题设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#侧栏设置"><span class="nav-number">5.</span> <span class="nav-text">侧栏设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#头像设置"><span class="nav-number">6.</span> <span class="nav-text">头像设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加阅读全文按钮"><span class="nav-number">7.</span> <span class="nav-text">添加阅读全文按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加分类模块"><span class="nav-number">8.</span> <span class="nav-text">添加分类模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加标签模块"><span class="nav-number">9.</span> <span class="nav-text">添加标签模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加关于模块"><span class="nav-number">10.</span> <span class="nav-text">添加关于模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加搜索功能"><span class="nav-number">11.</span> <span class="nav-text">添加搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#个人社交连接"><span class="nav-number">12.</span> <span class="nav-text">个人社交连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建文章模板更改"><span class="nav-number">13.</span> <span class="nav-text">新建文章模板更改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改文章底部标签的符合“-”"><span class="nav-number">14.</span> <span class="nav-text">修改文章底部标签的符合“#”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置网站LOGO"><span class="nav-number">15.</span> <span class="nav-text">设置网站LOGO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改博客底部显示"><span class="nav-number">16.</span> <span class="nav-text">修改博客底部显示</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#隐藏网页底部powered-By-Hexo"><span class="nav-number">16.1.</span> <span class="nav-text">隐藏网页底部powered By Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改网页底部桃心"><span class="nav-number">16.2.</span> <span class="nav-text">修改网页底部桃心</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实现网站底部访问量显示"><span class="nav-number">16.3.</span> <span class="nav-text">实现网站底部访问量显示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#让心变红并且跳起来"><span class="nav-number">16.4.</span> <span class="nav-text">让心变红并且跳起来</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#显示网站运行时间"><span class="nav-number">16.5.</span> <span class="nav-text">显示网站运行时间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文末添加版权声明"><span class="nav-number">17.</span> <span class="nav-text">文末添加版权声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章浏览进度显示和回到顶部功能"><span class="nav-number">18.</span> <span class="nav-text">文章浏览进度显示和回到顶部功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片放大查看功能"><span class="nav-number">19.</span> <span class="nav-text">图片放大查看功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给页面添加背景图片"><span class="nav-number">20.</span> <span class="nav-text">给页面添加背景图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面透明度修改"><span class="nav-number">21.</span> <span class="nav-text">页面透明度修改</span></a></li></ol></div>
             
 
           </div>
@@ -1053,7 +1038,11 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
@@ -1077,28 +1066,56 @@
 -->
 
 
-<span id="busuanzi_container_site_uv">
-  本站访问次数：<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+
+<!--添加网站的运行时间-->
+<span id="sitetime"> <br></span>
+<script language="javascript">
+	function siteTime(){
+		window.setTimeout("siteTime()", 1000);
+		var seconds = 1000
+		var minutes = seconds * 60
+		var hours = minutes * 60
+		var days = hours * 24
+		var years = days * 365
+
+		var today = new Date()
+		var todayYear = today.getFullYear()
+		var todayMonth = today.getMonth()
+		var todayDate = today.getDate()
+		var todayHour = today.getHours()
+		var todayMinute = today.getMinutes()
+		var todaySecond = today.getSeconds()
+		var t1 = Date.UTC(2017,4,18,11,00,00)
+		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)
+		var diff = t2-t1
+
+		var diffYears = Math.floor(diff/years)
+		var diffDays = Math.floor((diff/days)-diffYears*365)
+		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours)
+		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes)
+		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds)
+		document.getElementById("sitetime").innerHTML=" 本站已运行"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒<br>"
+	}
+	siteTime()
+</script>
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
 </span>
-
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-user"></i>
-    </span>
-    <span class="site-uv" title="总访客量">
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-    </span>
-  
-
-  
-
-  
 </div>
 
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共5.7k字</span>
+</div>
+
+        
 
 
 
