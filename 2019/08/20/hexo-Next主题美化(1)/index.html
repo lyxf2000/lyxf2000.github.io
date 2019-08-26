@@ -29,7 +29,7 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css?v=1.0.2">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2">
 
 
 
@@ -116,7 +116,8 @@
 <meta property="og:image" content="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190821145555.png">
 <meta property="og:image" content="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190821205005.png">
 <meta property="og:image" content="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190821205016.png">
-<meta property="og:updated_time" content="2019-08-25T14:12:48.505Z">
+<meta property="og:image" content="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190826110604.png">
+<meta property="og:updated_time" content="2019-08-26T03:09:11.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo-Next主题美化&lt;一&gt;">
 <meta name="twitter:description" content="配置博客基本信息 在站点根目录下_config.yml中进行基础配置">
@@ -456,7 +457,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-25 22:12:48" itemprop="dateModified" datetime="2019-08-25T22:12:48+08:00">2019-08-25</time>
+                <time title="修改时间：2019-08-26 11:09:11" itemprop="dateModified" datetime="2019-08-26T11:09:11+08:00">2019-08-26</time>
               </span>
             
           
@@ -488,7 +489,7 @@
   <i class="fa fa-calendar-o"></i>
 </span>
 <span class="post-meta-item-text">字数统计:</span>
-<span class="post-count">3.5k(字)</span>
+<span class="post-count">4.2k(字)</span>
 </span>
 
 <span class="post-time">
@@ -497,7 +498,7 @@
 <i class="fa fa-calendar-o"></i>
 </span>
 <span class="post-meta-item-text">阅读时长≈</span>
-<span class="post-count">16(分)</span>
+<span class="post-count">19(分)</span>
 </span>
 
 
@@ -538,9 +539,7 @@
 <p>在站点根目录下<code>_config.yml</code>中进行基础配置</p>
 <a id="more"></a>
 
-
-
-<p><font color="red">我使用Notepad++打开编辑，也可以直接使用记事本</font></p>
+<p><font color="red">我使用Notepad++打开编辑，也可以直接使用记事本，推荐Sublime Text，但是下载和安装汉化插件需要链外网</font></p>
 <p><img src="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190821145555.png" alt></p>
 <p><strong>说明:</strong></p>
 <ul>
@@ -717,6 +716,28 @@
 <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">favicon:</span></span><br><span class="line"><span class="symbol">  small:</span> <span class="meta-keyword">/images/</span>favicon<span class="number">-16</span>x16-next.png</span><br><span class="line"><span class="symbol">  medium:</span> <span class="meta-keyword">/images/</span>favicon<span class="number">-32</span>x32-next.png</span><br><span class="line"><span class="symbol">  apple_touch_icon:</span> <span class="meta-keyword">/images/</span>apple-touch-icon-next.png</span><br><span class="line"><span class="symbol">  safari_pinned_tab:</span> <span class="meta-keyword">/images/</span>logo.svg</span><br></pre></td></tr></table></figure>
 
 <p>可以看到有四种效果,一般我们只需将medium换成我们自己图标路径就行了。</p>
+<h3 id="使用动态背景"><a href="#使用动态背景" class="headerlink" title="使用动态背景"></a>使用动态背景</h3><hr>
+<p><strong>在主题配置文件<code>_config.yml</code></strong> 下搜索<code>canvas</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Canvas-nest</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-canvas-nest</span></span><br><span class="line"><span class="attr">canvas_nest:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  onmobile:</span> <span class="literal">true</span> <span class="comment"># display on mobile or not</span></span><br><span class="line"><span class="attr">  color:</span> <span class="string">"0,0,255"</span> <span class="comment"># RGB values, use ',' to separate 颜色</span></span><br><span class="line"><span class="attr">  opacity:</span> <span class="number">0.5</span> <span class="comment"># the opacity of line: 0~1 透明度我改成1</span></span><br><span class="line"><span class="attr">  zIndex:</span> <span class="bullet">-1</span> <span class="comment"># z-index property of the background</span></span><br><span class="line"><span class="attr">  count:</span> <span class="number">99</span> <span class="comment"># the number of lines 修改线的数量 我改成240</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># JavaScript 3D library.</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-three</span></span><br><span class="line"><span class="comment"># three_waves</span></span><br><span class="line"><span class="attr">three_waves:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># canvas_lines</span></span><br><span class="line"><span class="attr">canvas_lines:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># canvas_sphere</span></span><br><span class="line"><span class="attr">canvas_sphere:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>需要启用哪个，哪个就改成true</p>
+<p><font color="red">网上都是这么说的，但是我使用后没反应。后来发现得下载下来才可以。</font></p>
+<p>1.进入<code>theme/next</code>目录 </p>
+<p>2.<code>git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest</code></p>
+<p>3.从新开启网页即可。</p>
+<blockquote>
+<p>其他三种也需要下载才能使用</p>
+</blockquote>
+<p>### </p>
+<h3 id="使用加载进度条"><a href="#使用加载进度条" class="headerlink" title="使用加载进度条"></a>使用加载进度条</h3><hr>
+<p>同样类似动态背景，我们直接启用<code>config</code>是不行的，需要先下载。</p>
+<p>1.进入<code>theme/next</code>目录 </p>
+<p>2.<code>git clone https://github.com/theme-next/theme-next-pace source/lib/pace</code></p>
+<p>3.<strong>在主题配置文件<code>_config.yml</code></strong> 下搜索<code>pace</code></p>
+<figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pace: <span class="literal">true</span></span><br><span class="line"># Themes list:</span><br><span class="line"># pace-<span class="built_in">theme</span>-big-counter | pace-<span class="built_in">theme</span>-bounce | pace-<span class="built_in">theme</span>-barber-shop | pace-<span class="built_in">theme</span>-center-atom</span><br><span class="line"># pace-<span class="built_in">theme</span>-center-<span class="built_in">circle</span> | pace-<span class="built_in">theme</span>-center-radar | pace-<span class="built_in">theme</span>-center-simple | pace-<span class="built_in">theme</span>-corner-indicator</span><br><span class="line"># pace-<span class="built_in">theme</span>-fill-left | pace-<span class="built_in">theme</span>-flash | pace-<span class="built_in">theme</span>-loading-bar | pace-<span class="built_in">theme</span>-mac-osx | pace-<span class="built_in">theme</span>-minimal</span><br><span class="line">pace_theme: pace-<span class="built_in">theme</span>-center-atom</span><br></pre></td></tr></table></figure>
+
+<p>pace: 改为true</p>
+<p>pace_theme: 从上面选择其中一个</p>
 <h3 id="修改博客底部显示"><a href="#修改博客底部显示" class="headerlink" title="修改博客底部显示"></a>修改博客底部显示</h3><hr>
 <h4 id="隐藏网页底部powered-By-Hexo"><a href="#隐藏网页底部powered-By-Hexo" class="headerlink" title="隐藏网页底部powered By Hexo"></a>隐藏网页底部powered By Hexo</h4><p>打开<code>themes/next/layout/_partials/footer.swig</code>,直接隐藏以下代码即可,建议不要删除，<strong>即添加<code>&lt;!--</code>和<code>--&gt;</code></strong><br>代码如下:</p>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!--</span></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.footer.powered.enable %&#125;</span><span class="xml"><span class="comment"></span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"powered-by"</span>&gt;</span></span><span class="comment">&#123;#</span></span><br><span class="line"><span class="comment">  #&#125;</span><span class="xml"></span><span class="template-variable">&#123;&#123; __('footer.powered', '&lt;a class="theme-link" target="_blank"' + nofollow + ' href="https://hexo.io"&gt;Hexo&lt;/a&gt;') &#125;&#125;</span><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.footer.powered.version %&#125;</span><span class="xml"> v</span><span class="template-variable">&#123;&#123; hexo_env('version') &#125;&#125;</span><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span><span class="comment">&#123;#</span></span><br><span class="line"><span class="comment">#&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.footer.powered.enable and theme.footer.theme.enable %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-meta-divider"</span>&gt;</span>|<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.footer.theme.enable %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"theme-info"</span>&gt;</span></span><span class="comment">&#123;#</span></span><br><span class="line"><span class="comment">  #&#125;</span><span class="xml"></span><span class="template-variable">&#123;&#123; __('footer.theme') &#125;&#125;</span><span class="xml"> &amp;mdash; </span><span class="comment">&#123;#</span></span><br><span class="line"><span class="comment">  #&#125;</span><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"theme-link"</span> <span class="attr">target</span>=<span class="string">"_blank"</span></span></span><span class="template-variable">&#123;&#123; nofollow &#125;&#125;</span><span class="xml"><span class="tag"> <span class="attr">href</span>=<span class="string">"https://github.com/theme-next/hexo-theme-next"</span>&gt;</span></span><span class="comment">&#123;#</span></span><br><span class="line"><span class="comment">    #&#125;</span><span class="xml">NexT.</span><span class="template-variable">&#123;&#123; theme.scheme &#125;&#125;</span><span class="xml"></span><span class="comment">&#123;#</span></span><br><span class="line"><span class="comment">  #&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.footer.theme.version %&#125;</span><span class="xml"> v</span><span class="template-variable">&#123;&#123; version &#125;&#125;</span><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span><span class="comment">&#123;#</span></span><br><span class="line"><span class="comment">#&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml">--&gt;</span></span><br></pre></td></tr></table></figure>
@@ -767,6 +788,18 @@
 <p>之后在<code>站点配置文件_config.yml</code>下修改url，改成你的域名，否则版权本文链接显示不是你的站点名：</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">## If your site <span class="keyword">is</span> <span class="keyword">put</span> in <span class="keyword">a</span> subdirectory, <span class="keyword">set</span> url <span class="keyword">as</span> <span class="string">'http://yoursite.com/child'</span> <span class="built_in">and</span> root <span class="keyword">as</span> <span class="string">'/child/'</span></span><br><span class="line">ur<span class="variable">l:</span> http://lyxf.live</span><br><span class="line">roo<span class="variable">t:</span> /</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_default<span class="variable">s:</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="文末添加结束语"><a href="#文末添加结束语" class="headerlink" title="文末添加结束语"></a>文末添加结束语</h3><hr>
+<ol>
+<li>在路径<code>\themes\next\layout\_macro</code>中新建<code>passage-end-tag.swig</code>文件,并添加以下内容：</li>
+</ol>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">    </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> not is_index %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;color: #555;font-size:14px;"</span>&gt;</span>-------------------本文结束 <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-heart"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> 感谢阅读-------------------<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">    </span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>接着打开<code>\themes\next\layout\_macro\post.swig</code>文件，在<code>end post body</code>后加代码：</p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;#####################&#125;</span><br><span class="line">    &#123;### END POST BODY ###&#125;</span><br><span class="line">    &#123;#####################&#125;</span><br><span class="line"><span class="comment">//添加	</span></span><br><span class="line">	&lt;div&gt;</span><br><span class="line">  &#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">    &#123;% include <span class="string">'passage-end-tag.swig'</span> %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"><span class="comment">//结束</span></span><br></pre></td></tr></table></figure>
+
+<p><font color="red">需要重新<code>hexo s</code> 才会生效</font></p>
+<p>效果如下：</p>
+<p><img src="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190826110604.png" alt></p>
 <h3 id="文章浏览进度显示和回到顶部功能"><a href="#文章浏览进度显示和回到顶部功能" class="headerlink" title="文章浏览进度显示和回到顶部功能"></a>文章浏览进度显示和回到顶部功能</h3><hr>
 <p><strong>在主题配置文件</strong><code>_config.yml</code>下找<code>back2top:</code></p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">back2top:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Back to top in sidebar.</span></span><br><span class="line"><span class="attr">  sidebar:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Scroll percent label in b2t button.</span></span><br><span class="line"><span class="attr">  scrollpercent:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
@@ -797,6 +830,26 @@
 <p><code>$code-foreground                = #fc6423</code>指代码颜色</p>
 <p><code>$code-background                = #FFFACD</code>指背景颜色</p>
 <p>上面是我修改后的颜色，可以自行根据颜色代码修改。</p>
+<h3 id="添加点击爆炸效果"><a href="#添加点击爆炸效果" class="headerlink" title="添加点击爆炸效果"></a>添加点击爆炸效果</h3><hr>
+<ol>
+<li><p>复制代码<a href="https://script-1256884783.file.myqcloud.com/cursor/fireworks.js" target="_blank" rel="noopener">点击这里</a></p>
+</li>
+<li><p>新建记事本，粘贴代码，改名为<code>firework.js</code></p>
+</li>
+<li><p>放入<code>themes\next\source\js</code>文件夹中</p>
+</li>
+<li><p>打开<code>\themes\next\layout\_layout.swig</code> 文件。在最后，但是在<code>&lt;/body&gt;</code>前面添加</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">&lt;!-- 页面点击礼花效果 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/firework.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新<code>hexo s</code>即可</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>需要不同效果只需要获取代码更改<code>firework.js</code>即可</strong></p>
+</blockquote>
+<p><strong>爆炸特效：</strong><a href="https://script-1256884783.file.myqcloud.com/cursor/explosion.min.js" target="_blank" rel="noopener">点击这里</a></p>
+<p><strong>爱心特效：</strong><a href="https://script-1256884783.file.myqcloud.com/cursor/love.min.js" target="_blank" rel="noopener">点击这里</a></p>
+<p><strong>文字特效：</strong><a href="https://script-1256884783.file.myqcloud.com/cursor/text.js" target="_blank" rel="noopener">点击这里</a>（PS:文字可自己更改）</p>
 
       
     </div>
@@ -807,7 +860,17 @@
     
     
 	
-	
+	<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #555;font-size:14px;">-----------------------本文结束 <i class="fa fa-heart"></i> 感谢阅读-----------------------</div>
+    
+</div>
+  
+</div>
+
+
     
 
     
@@ -1114,6 +1177,10 @@
                     <a href="https://github.com/" title="https://github.com/" rel="noopener" target="_blank">github</a>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.luogu.org/" title="https://www.luogu.org/" rel="noopener" target="_blank">洛谷</a>
+                  </li>
+                
               </ul>
             </div>
           
@@ -1144,7 +1211,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置博客基本信息"><span class="nav-number">1.</span> <span class="nav-text">配置博客基本信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#超链接颜色修改"><span class="nav-number">2.</span> <span class="nav-text">超链接颜色修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#菜单设置"><span class="nav-number">3.</span> <span class="nav-text">菜单设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NexT分主题设置"><span class="nav-number">4.</span> <span class="nav-text">NexT分主题设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#侧栏设置"><span class="nav-number">5.</span> <span class="nav-text">侧栏设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#头像设置"><span class="nav-number">6.</span> <span class="nav-text">头像设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码高亮设置"><span class="nav-number">7.</span> <span class="nav-text">代码高亮设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加阅读全文按钮，和其按键样式修改。"><span class="nav-number">8.</span> <span class="nav-text">添加阅读全文按钮，和其按键样式修改。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加分类模块"><span class="nav-number">9.</span> <span class="nav-text">添加分类模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加标签模块"><span class="nav-number">10.</span> <span class="nav-text">添加标签模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加关于模块"><span class="nav-number">11.</span> <span class="nav-text">添加关于模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加搜索功能"><span class="nav-number">12.</span> <span class="nav-text">添加搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#个人社交连接"><span class="nav-number">13.</span> <span class="nav-text">个人社交连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#友情链接添加"><span class="nav-number">14.</span> <span class="nav-text">友情链接添加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建文章模板更改"><span class="nav-number">15.</span> <span class="nav-text">新建文章模板更改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改文章底部标签的符合“-”"><span class="nav-number">16.</span> <span class="nav-text">修改文章底部标签的符合“#”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置网站LOGO"><span class="nav-number">17.</span> <span class="nav-text">设置网站LOGO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改博客底部显示"><span class="nav-number">18.</span> <span class="nav-text">修改博客底部显示</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#隐藏网页底部powered-By-Hexo"><span class="nav-number">18.1.</span> <span class="nav-text">隐藏网页底部powered By Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改网页底部桃心"><span class="nav-number">18.2.</span> <span class="nav-text">修改网页底部桃心</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实现网站底部访问量显示和全站字数显示"><span class="nav-number">18.3.</span> <span class="nav-text">实现网站底部访问量显示和全站字数显示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#让心变红并且跳起来"><span class="nav-number">18.4.</span> <span class="nav-text">让心变红并且跳起来</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#显示网站运行时间"><span class="nav-number">18.5.</span> <span class="nav-text">显示网站运行时间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文末添加版权声明"><span class="nav-number">19.</span> <span class="nav-text">文末添加版权声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章浏览进度显示和回到顶部功能"><span class="nav-number">20.</span> <span class="nav-text">文章浏览进度显示和回到顶部功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片放大查看功能"><span class="nav-number">21.</span> <span class="nav-text">图片放大查看功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给页面添加背景图片"><span class="nav-number">22.</span> <span class="nav-text">给页面添加背景图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面透明度修改"><span class="nav-number">23.</span> <span class="nav-text">页面透明度修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章界面添加字数显示和阅读时长功能"><span class="nav-number">24.</span> <span class="nav-text">文章界面添加字数显示和阅读时长功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小型代码块颜色修改"><span class="nav-number">25.</span> <span class="nav-text">小型代码块颜色修改</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置博客基本信息"><span class="nav-number">1.</span> <span class="nav-text">配置博客基本信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#超链接颜色修改"><span class="nav-number">2.</span> <span class="nav-text">超链接颜色修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#菜单设置"><span class="nav-number">3.</span> <span class="nav-text">菜单设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NexT分主题设置"><span class="nav-number">4.</span> <span class="nav-text">NexT分主题设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#侧栏设置"><span class="nav-number">5.</span> <span class="nav-text">侧栏设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#头像设置"><span class="nav-number">6.</span> <span class="nav-text">头像设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码高亮设置"><span class="nav-number">7.</span> <span class="nav-text">代码高亮设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加阅读全文按钮，和其按键样式修改。"><span class="nav-number">8.</span> <span class="nav-text">添加阅读全文按钮，和其按键样式修改。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加分类模块"><span class="nav-number">9.</span> <span class="nav-text">添加分类模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加标签模块"><span class="nav-number">10.</span> <span class="nav-text">添加标签模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加关于模块"><span class="nav-number">11.</span> <span class="nav-text">添加关于模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加搜索功能"><span class="nav-number">12.</span> <span class="nav-text">添加搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#个人社交连接"><span class="nav-number">13.</span> <span class="nav-text">个人社交连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#友情链接添加"><span class="nav-number">14.</span> <span class="nav-text">友情链接添加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建文章模板更改"><span class="nav-number">15.</span> <span class="nav-text">新建文章模板更改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改文章底部标签的符合“-”"><span class="nav-number">16.</span> <span class="nav-text">修改文章底部标签的符合“#”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置网站LOGO"><span class="nav-number">17.</span> <span class="nav-text">设置网站LOGO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用动态背景"><span class="nav-number">18.</span> <span class="nav-text">使用动态背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用加载进度条"><span class="nav-number">19.</span> <span class="nav-text">使用加载进度条</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改博客底部显示"><span class="nav-number">20.</span> <span class="nav-text">修改博客底部显示</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#隐藏网页底部powered-By-Hexo"><span class="nav-number">20.1.</span> <span class="nav-text">隐藏网页底部powered By Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改网页底部桃心"><span class="nav-number">20.2.</span> <span class="nav-text">修改网页底部桃心</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实现网站底部访问量显示和全站字数显示"><span class="nav-number">20.3.</span> <span class="nav-text">实现网站底部访问量显示和全站字数显示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#让心变红并且跳起来"><span class="nav-number">20.4.</span> <span class="nav-text">让心变红并且跳起来</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#显示网站运行时间"><span class="nav-number">20.5.</span> <span class="nav-text">显示网站运行时间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文末添加版权声明"><span class="nav-number">21.</span> <span class="nav-text">文末添加版权声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文末添加结束语"><span class="nav-number">22.</span> <span class="nav-text">文末添加结束语</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章浏览进度显示和回到顶部功能"><span class="nav-number">23.</span> <span class="nav-text">文章浏览进度显示和回到顶部功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片放大查看功能"><span class="nav-number">24.</span> <span class="nav-text">图片放大查看功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给页面添加背景图片"><span class="nav-number">25.</span> <span class="nav-text">给页面添加背景图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面透明度修改"><span class="nav-number">26.</span> <span class="nav-text">页面透明度修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章界面添加字数显示和阅读时长功能"><span class="nav-number">27.</span> <span class="nav-text">文章界面添加字数显示和阅读时长功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小型代码块颜色修改"><span class="nav-number">28.</span> <span class="nav-text">小型代码块颜色修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加点击爆炸效果"><span class="nav-number">29.</span> <span class="nav-text">添加点击爆炸效果</span></a></li></ol></div>
             
 
           </div>
@@ -1244,7 +1311,7 @@
 	
 	<!-- 添加博客全站总字数统计-->
 	<i class="fa fa-pencil"></i>
-	<span class="post-count">博客全站共 8.7k 字</span>
+	<span class="post-count">博客全站共 9.4k 字</span>
 </div>
 	
 
@@ -1299,7 +1366,7 @@
     
     
   
-  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script color="124,252,0" opacity="1" zindex="-1" count="233" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
@@ -1722,6 +1789,9 @@
   
 
   
+
+  <!-- 页面点击礼花效果 -->
+<script type="text/javascript" src="/js/firework.js"></script>
 
 </body>
 </html>

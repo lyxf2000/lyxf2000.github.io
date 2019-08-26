@@ -29,7 +29,7 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css?v=1.0.2">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2">
 
 
 
@@ -125,7 +125,7 @@
 <meta property="og:image" content="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190825120742.png">
 <meta property="og:image" content="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190825171439.png">
 <meta property="og:image" content="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190825215333.png">
-<meta property="og:updated_time" content="2019-08-25T14:14:11.140Z">
+<meta property="og:updated_time" content="2019-08-26T03:45:20.153Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo-Next主题美化&lt;二&gt;">
 <meta name="twitter:description" content="插入音乐">
@@ -468,7 +468,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-25 22:14:11" itemprop="dateModified" datetime="2019-08-25T22:14:11+08:00">2019-08-25</time>
+                <time title="修改时间：2019-08-26 11:45:20" itemprop="dateModified" datetime="2019-08-26T11:45:20+08:00">2019-08-26</time>
               </span>
             
           
@@ -500,7 +500,7 @@
   <i class="fa fa-calendar-o"></i>
 </span>
 <span class="post-meta-item-text">字数统计:</span>
-<span class="post-count">2.1k(字)</span>
+<span class="post-count">2.2k(字)</span>
 </span>
 
 <span class="post-time">
@@ -585,6 +585,9 @@
 <p><strong>得到歌词文件，下图为部分歌词：</strong></p>
 <p><img src="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190825213909.png" alt></p>
 <p><strong>之后改名，保存为lrc文件即可手工得到歌词文件</strong></p>
+<blockquote>
+<p>如果发现歌词出现乱码，在保存的时候选择另存为，然后点击底部的工具选项，选择Web选项，将编码设置为Unicode(UTF-8)即可。</p>
+</blockquote>
 <p><strong>方法二： 使用<code>Music tools</code></strong>  <a href="http://www.yeyulingfeng.com/4317.html" target="_blank" rel="noopener">下载地址</a></p>
 <p><img src="https://lyxf2000-1259802619.cos.ap-beijing.myqcloud.com/20190825171935.png" alt></p>
 <p><strong>使用软件下载音乐，同时会自动下载歌词lrc文件。</strong></p>
@@ -747,7 +750,7 @@
 
 <p>效果如下：</p>
 
-    <div id="aplayer-bspTPnIk" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="699716432" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="true" data-listmaxheight="280px" data-preload="auto" data-theme="#FFD700" data-listfolded="true"></div>
+    <div id="aplayer-HDBnzQBG" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="699716432" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="true" data-listmaxheight="280px" data-preload="auto" data-theme="#FFD700" data-listfolded="true"></div>
 
 <blockquote>
 <p>更多使用请阅读：<a href="https://github.com/MoePlayer/hexo-tag-aplayer#customization-new-in-30" target="_blank" rel="noopener">Aplayer</a></p>
@@ -789,7 +792,7 @@
 <h4 id="使用audio标签修改"><a href="#使用audio标签修改" class="headerlink" title="使用audio标签修改"></a>使用audio标签修改</h4><p>同样的文件，同样的位置，添加下面代码</p>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> theme.links %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"links-of-blogroll-title"</span>&gt;</span></span></span><br><span class="line"><span class="xml">       ....省略部分代码</span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"links-of-blogroll-list"</span>&gt;</span></span></span><br><span class="line"><span class="xml">        ....省略部分代码</span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">//添加</span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"music163player"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">"http://music.163.com/song/media/outer/url?id=你的网易云歌曲ID.mp3"</span> <span class="attr">style</span>=<span class="string">"max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;"</span> <span class="attr">controls</span>=<span class="string">"controls"</span> <span class="attr">loop</span>=<span class="string">"loop"</span> <span class="attr">preload</span>=<span class="string">"meta"</span>&gt;</span>Your browser does not support the audio tag.<span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"> //结束</span></span><br></pre></td></tr></table></figure>
 
-<p><code>src=&quot;http://什么什么.mp3&quot;</code>可自行更改</p>
+<p><code>src=&quot;http://什么什么.mp3&quot;</code>可自行更改，若想自动播放则在<code>src=&quot;http://什么什么.mp3&quot;</code> 之后添加<code>autoplay</code>即可</p>
 <blockquote>
 <p><strong>优点是可以跨版权播放，缺点是不太美观，只有播放功能</strong></p>
 </blockquote>
@@ -803,7 +806,17 @@
     
     
 	
-	
+	<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #555;font-size:14px;">-----------------------本文结束 <i class="fa fa-heart"></i> 感谢阅读-----------------------</div>
+    
+</div>
+  
+</div>
+
+
     
 
     
@@ -1110,6 +1123,10 @@
                     <a href="https://github.com/" title="https://github.com/" rel="noopener" target="_blank">github</a>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.luogu.org/" title="https://www.luogu.org/" rel="noopener" target="_blank">洛谷</a>
+                  </li>
+                
               </ul>
             </div>
           
@@ -1240,7 +1257,7 @@
 	
 	<!-- 添加博客全站总字数统计-->
 	<i class="fa fa-pencil"></i>
-	<span class="post-count">博客全站共 8.7k 字</span>
+	<span class="post-count">博客全站共 9.4k 字</span>
 </div>
 	
 
@@ -1295,7 +1312,7 @@
     
     
   
-  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script color="124,252,0" opacity="1" zindex="-1" count="233" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
@@ -1718,6 +1735,9 @@
   
 
   
+
+  <!-- 页面点击礼花效果 -->
+<script type="text/javascript" src="/js/firework.js"></script>
 
 </body>
 </html>
