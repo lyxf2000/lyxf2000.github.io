@@ -21,6 +21,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
 
 
 
@@ -105,18 +118,18 @@
 
 
 
-  <meta name="description" content="目前来说建立这个博客的主要目的，是为了建立一个属于自己的小空间，一个自我总结的地方，很多社交性功能暂时是不需要的。如下：   RSS功能（暂无需求）  评论功能（暂无需求）  订阅微信公众号功能（暂无需求）  fork me on github功能（暂无需求）  添加音频播放器  文章添加锚点  文章加密访问功能（暂无需求，需要再添加）  静态资源压缩，优化加载速度  相册功能  博文置顶（待添加">
+  <meta name="description" content="目前来说建立这个博客的主要目的，是为了建立一个属于自己的小空间，一个自我总结的地方，很多社交性功能暂时是不需要的。如下：   RSS功能（暂无需求）  评论功能（暂无需求）  添加视频播放器(暂无需求)  静态资源压缩，优化加载速度（环境配置出错暂未解决）  相册功能  插入图片大小修改  主页文章图片展示  动态标签  博客推广  引用边框变色  将博客转移到腾讯云COS上（以后再说吧）  给自">
 <meta name="keywords" content="博客搭建">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Next主题下未设置功能">
 <meta property="og:url" content="http://lyxf.live/2019/08/23/博客未设置功能/index.html">
 <meta property="og:site_name" content="乐屿心扉">
-<meta property="og:description" content="目前来说建立这个博客的主要目的，是为了建立一个属于自己的小空间，一个自我总结的地方，很多社交性功能暂时是不需要的。如下：   RSS功能（暂无需求）  评论功能（暂无需求）  订阅微信公众号功能（暂无需求）  fork me on github功能（暂无需求）  添加音频播放器  文章添加锚点  文章加密访问功能（暂无需求，需要再添加）  静态资源压缩，优化加载速度  相册功能  博文置顶（待添加">
+<meta property="og:description" content="目前来说建立这个博客的主要目的，是为了建立一个属于自己的小空间，一个自我总结的地方，很多社交性功能暂时是不需要的。如下：   RSS功能（暂无需求）  评论功能（暂无需求）  添加视频播放器(暂无需求)  静态资源压缩，优化加载速度（环境配置出错暂未解决）  相册功能  插入图片大小修改  主页文章图片展示  动态标签  博客推广  引用边框变色  将博客转移到腾讯云COS上（以后再说吧）  给自">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-26T15:46:46.564Z">
+<meta property="og:updated_time" content="2019-08-27T14:54:21.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Next主题下未设置功能">
-<meta name="twitter:description" content="目前来说建立这个博客的主要目的，是为了建立一个属于自己的小空间，一个自我总结的地方，很多社交性功能暂时是不需要的。如下：   RSS功能（暂无需求）  评论功能（暂无需求）  订阅微信公众号功能（暂无需求）  fork me on github功能（暂无需求）  添加音频播放器  文章添加锚点  文章加密访问功能（暂无需求，需要再添加）  静态资源压缩，优化加载速度  相册功能  博文置顶（待添加">
+<meta name="twitter:description" content="目前来说建立这个博客的主要目的，是为了建立一个属于自己的小空间，一个自我总结的地方，很多社交性功能暂时是不需要的。如下：   RSS功能（暂无需求）  评论功能（暂无需求）  添加视频播放器(暂无需求)  静态资源压缩，优化加载速度（环境配置出错暂未解决）  相册功能  插入图片大小修改  主页文章图片展示  动态标签  博客推广  引用边框变色  将博客转移到腾讯云COS上（以后再说吧）  给自">
 
 
 
@@ -420,6 +433,8 @@
 
         <div class="post-meta">
 
+        
+
           
           
           
@@ -452,7 +467,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-26 23:46:46" itemprop="dateModified" datetime="2019-08-26T23:46:46+08:00">2019-08-26</time>
+                <time title="修改时间：2019-08-27 22:54:21" itemprop="dateModified" datetime="2019-08-27T22:54:21+08:00">2019-08-27</time>
               </span>
             
           
@@ -484,7 +499,7 @@
   <i class="fa fa-calendar-o"></i>
 </span>
 <span class="post-meta-item-text">字数统计:</span>
-<span class="post-count">239(字)</span>
+<span class="post-count">186(字)</span>
 </span>
 
 <span class="post-time">
@@ -534,18 +549,11 @@
 <ul>
 <li><input disabled type="checkbox"> <strong>RSS功能</strong>（暂无需求）</li>
 <li><input checked disabled type="checkbox"> <strong>评论功能</strong>（暂无需求）</li>
-<li><input disabled type="checkbox"> <strong>订阅微信公众号功能</strong>（暂无需求）</li>
-<li><input disabled type="checkbox"> <strong>fork me on github功能</strong>（暂无需求）</li>
-<li><input disabled type="checkbox"> <strong>添加音频播放器</strong></li>
-<li><input disabled type="checkbox"> <strong>文章添加锚点</strong></li>
-<li><input checked disabled type="checkbox"> <strong>文章加密访问功能</strong>（暂无需求，需要再添加）</li>
-<li><input checked disabled type="checkbox"> <strong>静态资源压缩，优化加载速度</strong></li>
+<li><input disabled type="checkbox"> <strong>添加视频播放器</strong>(暂无需求)</li>
+<li><input disabled type="checkbox"> <strong>静态资源压缩，优化加载速度</strong>（环境配置出错暂未解决）</li>
 <li><input checked disabled type="checkbox"> <strong>相册功能</strong></li>
-<li><input checked disabled type="checkbox"> <strong>博文置顶</strong>（待添加）</li>
-<li><input checked disabled type="checkbox"> <strong>自定义鼠标样式</strong></li>
 <li><input checked disabled type="checkbox"> <strong>插入图片大小修改</strong></li>
 <li><input checked disabled type="checkbox"> <strong>主页文章图片展示</strong></li>
-<li><input checked disabled type="checkbox"> <strong>侧边栏推荐阅读</strong></li>
 <li><input checked disabled type="checkbox"> <strong>动态标签</strong></li>
 <li><input checked disabled type="checkbox"> <strong>博客推广</strong></li>
 <li><input checked disabled type="checkbox"> <strong>引用边框变色</strong></li>
@@ -1013,7 +1021,7 @@
 	
 	<!-- 添加博客全站总字数统计-->
 	<i class="fa fa-pencil"></i>
-	<span class="post-count">博客全站共 11.2k 字</span>
+	<span class="post-count">博客全站共 12k 字</span>
 </div>
 	
 
