@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【持续更新】一些好用的软件]]></title>
+    <url>%2Fposts%2F5aec09f0%2F</url>
+    <content type="text"><![CDATA[Ⅰ.BD网盘下载不限速软件名：pandownload下载地址：https://pandownload.com/摆脱BD网盘下载限速Ⅱ.桌面美化1.UPUPOO地址：http://www.upupoo.com2.Wallpaper Engine​ Steam 上购买19元。Ⅲ.文件查找工具Listary：https://www.listary.com/​ http://www.jz5u.com/soft/system/optim/221007.html使用见：https://lyxf.live/posts/28531/Ⅳ.MarkDown写作Typora：https://www.typora.io/使用：https://lyxf.live/posts/28758/​ https://lyxf.live/posts/64191/Ⅴ.截图与GIF截图软件：snipasteGIF制作：ScreenToGifⅥ.图片上传，配合截图与GIF工具和Typora写作方便PicGo：https://github.com/Molunerfinn/PicGo使用：https://lyxf.live/posts/17870/]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>一些优秀的软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[我在搭建博客时遇到的那些问题]]></title>
     <url>%2Fposts%2F18589%2F</url>
     <content type="text"><![CDATA[hexo d命令报错 ERROR Deployer not found: git前提：已经在站点配置文件写入了1234deploy: type: git repository: https://github.com/lyxf2000/lyxf2000.github.io.git branch: master但是执行，hexo d报错：1ERROR Deployer not found: git解决：在站点目录下输入下面的插件安装hexo-deployer-git插件1npm install hexo-deployer-git --save无法使用一些自定义页面设置原因：由于未知原因，NexT-7.3版本，没有_custom文件解决：重新使用 NexT-7.2以及之前版本。文章的删除先删除本地文章hexo ghexo d透明设置，使得搜索栏出现全透明BUG暂未解决其他问题，均在hexo美化中解决不再赘述]]></content>
@@ -41,7 +52,7 @@
         <category>日常</category>
       </categories>
       <tags>
-        <tag>提高效率的小工具</tag>
+        <tag>一些优秀的软件</tag>
       </tags>
   </entry>
   <entry>
